@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "role_id": 1,
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "password": "password",
+        "first_name": "system",
+        "middle_name": "",
+        "last_name": "admin",
+        "gender": 1,
+        "contact_no": ""
+    },
+    {
+        "id": 2,
+        "role_id": 2,
+        "username": "hr_manager",
+        "email": "hr_manager@gmail.com",
+        "password": "password",
+        "first_name": "hr",
+        "middle_name": "",
+        "last_name": "manager",
+        "gender": 1,
+        "contact_no": ""
+    },
+    {
+        "id": 3,
+        "role_id": 3,
+        "username": "hr",
+        "email": "hr@gmail.com",
+        "password": "password",
+        "first_name": "hr",
+        "middle_name": "",
+        "last_name": "personnel",
+        "gender": 1,
+        "contact_no": ""
+    }
+]

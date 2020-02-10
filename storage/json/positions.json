@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "name": "Customer Service",
+        "required_educational_attainment": "High School Equivalent",
+        "required_recent_job_experience": "Customer Service",
+        "required_years_of_work_experience": "1 - 4 Years Experience"
+    },
+
+    {
+        "id": 2,
+        "name": "Technical Support",
+        "required_educational_attainment": "Associate's Degree",
+        "required_recent_job_experience": "Technical Support",
+        "required_years_of_work_experience": "Fresh Grad / < 1 Year Experience"
+    },
+
+    {
+        "id": 3,
+        "name": "Sales Representative",
+        "required_educational_attainment": "Undergraduate",
+        "required_recent_job_experience": "Sales Representative",
+        "required_years_of_work_experience": "Fresh Grad / < 1 Year Experience"
+    }
+]
