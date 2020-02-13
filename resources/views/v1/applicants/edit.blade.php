@@ -126,7 +126,7 @@
 
         <div class="form-group">
           <label for="">Date of Examination</label>
-          <input type="date" class="form-control" name="examination_date" required />
+          <input type="date" class="form-control" name="examination_date" min="<?php echo date("Y-m-d"); ?>" required />
         </div>
 
         <div class="form-group">
