@@ -9,8 +9,6 @@ use App\Model\ApplicantPosition;
 use App\User;
 use Excel;
 
-ob_get_clean();
-
 class ReportsController extends Controller
 {
 
@@ -72,7 +70,7 @@ class ReportsController extends Controller
                             $applicant['email'],
                             $applicant['educational_attainment'],
                             $applicant['years_of_work_experience'],
-                            $applicant['applicationsPassed'],
+                            (string) $applicant['applicationsPassed'],
                             $applicant['process'],
                             $applicant['created_at']
                         ];
@@ -82,7 +80,7 @@ class ReportsController extends Controller
                     $sheet->setColumnFormat(['G' => '@']);
                     $sheet->fromArray($data, null, 'A1', false, false);
                 });
-            })->download('xlsx');
+            })->download('csv');
         }
 
 
