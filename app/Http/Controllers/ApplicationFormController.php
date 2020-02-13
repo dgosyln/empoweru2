@@ -110,7 +110,7 @@ class ApplicationFormController extends Controller
             $totalCount = ApplicantPosition::where('applicant_id', $applicant->id)->count();
 
             if ($totalPassed === 0) {
-                // User::find($user->id)->delete();
+                User::find($user->id)->update(['is_active' => 0]);
                 Applicant::find($applicant->id)->update(['process' => 'Failed']);
                 // ApplicantPosition::where('applicant_id', $applicant->id)->delete();
             }
