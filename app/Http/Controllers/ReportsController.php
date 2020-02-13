@@ -9,6 +9,8 @@ use App\Model\ApplicantPosition;
 use App\User;
 use Excel;
 
+ob_get_clean();
+
 class ReportsController extends Controller
 {
 
@@ -80,7 +82,7 @@ class ReportsController extends Controller
                     $sheet->setColumnFormat(['G' => '@']);
                     $sheet->fromArray($data, null, 'A1', false, false);
                 });
-            })->download('csv');
+            })->download('xlsx');
         }
 
 
