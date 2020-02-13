@@ -61,12 +61,21 @@
                 </a>
             </li>
 
-            {{-- manage userss --}}
+            {{-- manage users --}}
             <li>
                 <a href="{{ route('users.index') }}" 
                     class="{{ Request::is('users*') ? 'active' : '' }}">
                     <i class="fa fa-edit fa-fw"></i>
                     Manage Users
+                </a>
+            </li>
+
+            {{-- manage positions --}}
+            <li>
+                <a href="{{ route('positions.index') }}" 
+                    class="{{ Request::is('positions*') ? 'active' : '' }}">
+                    <i class="fa fa-list fa-fw"></i>
+                    Manage Positions
                 </a>
             </li>
 

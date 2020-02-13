@@ -22,4 +22,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('finalInterviewResults/{applicationID}/{status}', 'FinalInterviewResultsController@edit')->name('finalInterviewResults.edit');
 
     Route::resource('reports', 'ReportsController');
+    Route::resource('positions', 'PositionController');
 });
