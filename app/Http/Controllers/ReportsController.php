@@ -36,7 +36,7 @@ class ReportsController extends Controller
 
                 $totalPassed = ApplicantPosition::where('applicant_id', $data->applicant_id)->where('application_status', 'Approved')->count();
                 $totalCount = ApplicantPosition::where('applicant_id', $data->applicant_id)->count();
-                $data->applicationsPassed = $totalPassed . '/' . $totalCount;
+                $data->applicationsPassed = $totalPassed . ' out of ' . $totalCount;
 
                 return $data;
             });
@@ -70,7 +70,7 @@ class ReportsController extends Controller
                             $applicant['email'],
                             $applicant['educational_attainment'],
                             $applicant['years_of_work_experience'],
-                            (string) $applicant['applicationsPassed'],
+                            $applicant['applicationsPassed'],
                             $applicant['process'],
                             $applicant['created_at']
                         ];
