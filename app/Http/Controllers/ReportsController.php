@@ -79,6 +79,11 @@ class ReportsController extends Controller
                     $sheet->fromArray($data);
                 });
             })->download('xlsx');
+
+
+            header('Content-Type: application/vnd.ms-excel');
+            header('Content-Disposition: attachment;filename="your_name.xls"');
+            header('Cache-Control: max-age=0');
         }
 
 
