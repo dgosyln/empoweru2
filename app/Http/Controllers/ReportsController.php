@@ -76,14 +76,11 @@ class ReportsController extends Controller
                         ];
                     }
 
-                    $sheet->fromArray($data);
+                    // Set multiple column formats
+                    $sheet->setColumnFormat(['G' => '@']);
+                    $sheet->fromArray($data, null, 'A1', false, false);
                 });
-            })->download('xlsx');
-
-
-            header('Content-Type: application/vnd.ms-excel');
-            header('Content-Disposition: attachment;filename="your_name.xls"');
-            header('Cache-Control: max-age=0');
+            })->download('csv');
         }
 
 
